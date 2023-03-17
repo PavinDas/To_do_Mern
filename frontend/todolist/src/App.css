@@ -1,0 +1,139 @@
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Pacifico&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+
+body {
+  background-image: url("../public/bgi.jpg");
+  background-size: cover;
+  background-color: rgba(0,0,0,0.1);
+  font-family: 'Pacifico', cursive;
+  z-index: -3;
+  overflow: hidden;
+}
+
+
+.container {
+  max-width:600px;
+  margin:auto;
+  padding:0 1rem;
+  max-height: 90vh; 
+ 
+}
+
+ 
+
+/* .topsection{
+  height: 20vh;
+  position:-webkit-sticky;
+  z-index: 2;
+} */
+
+
+h1 {
+  margin-top:1rem;
+  text-align:center;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#d60c0c, #0ac9eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Oswald', sans-serif;
+}
+
+.top {
+  margin-top:1rem;
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  outline:none;
+  width:400px;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.add {
+  background-color: #000;
+  color:white;
+  cursor:pointer;
+  padding:0.5rem 1.5rem;
+  text-align: center;
+  border-radius:8px;
+
+}
+
+.add:hover {
+  opacity: 0.9;
+}
+
+.list {
+  margin-top: 2rem;
+  overflow-y: scroll;
+  max-height: 70vh;
+ 
+}
+.list::-webkit-scrollbar{
+  display: none;
+}
+
+.todo {
+  position: relative;
+  margin-top:1rem;
+  background-color: #000;
+  color:white;
+  padding:1.5rem 3rem;
+  border-radius:5px;
+
+}
+
+.icons {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  right:20px;
+  display: flex;
+  gap:0.5rem;
+}
+
+.icon {
+  cursor:pointer;
+  font-size:20px;
+}
+
+.strip {
+  text-decoration: line-through;
+}
+@media screen and (max-width:600px) {
+  
+  .container {
+    max-width:400px;
+    margin:auto;
+    padding:0 1rem;
+    min-height: 100vh; 
+  }
+
+  h1 {
+  font-size: 42px;
+  background: -webkit-linear-gradient(#df0849, #ebe70a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  }
+
+  input {
+    width:300px;
+    padding:0.3rem 0.9rem;
+  }
+
+  .todo {
+    margin-top:0.5rem;
+    padding:1rem 2rem;
+  }
+  
+}
